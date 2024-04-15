@@ -1,14 +1,9 @@
-# kepler
+# Kepler-ecommerce-store
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+# Live Link
+```sh
+https://kepler-ecommerce-store.vercel.app/
+```
 
 ## Project Setup
 
@@ -27,3 +22,8 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Assumptions and Features
+1. Added a feature that counts the number of items in the cart in Navbar.
+2. Assumed that a Cart page will also be there with Product List and Product Detail page.
+3. Showed the About Section in  the Home page itself rather than making its own View
