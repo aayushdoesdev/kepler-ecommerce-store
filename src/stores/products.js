@@ -19,6 +19,9 @@ export const productStore = defineStore("products", {
     },
     removeFromCart(id){
        this.cart = this.cart.filter((item) => item.id !== id)
+    },
+    checkOut(){
+      this.cart = []
     }
   },
 });

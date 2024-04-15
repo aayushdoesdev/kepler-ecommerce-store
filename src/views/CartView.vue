@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="text-center bg-black text-white py-2 mt-8 rounded mb-16">
-        <button class="text-xl font-semibold lg:text-2xl">
+        <button class="text-xl font-semibold lg:text-2xl" @click="proceedCheckout">
           Proceed to Checkout
         </button>
       </div>
@@ -85,6 +85,10 @@ const truncatedTitle = (title) => {
 const removeFromCart = (id) => {
   store.removeFromCart(id);
 };
+
+const proceedCheckout = () => {
+  store.checkOut()
+}
 
 const subTotal = computed(() => {
   return store.cart.reduce((total, item) => Math.floor(total + item.price * 83), 0);
